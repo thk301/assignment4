@@ -1,0 +1,93 @@
+Tae Kim
+
+
+Questions
+1. The Python interpreter has strict rules for variable names. Which of the following are legal Python names? If the name is not legal, state the reason.
+
+and -->reserved name
+on Ipython-->and = 1
+SyntaxError: invalid syntax
+
+_and --> Legal because underscore can be used
+on Ipython-->_and =1
+
+var --> Legal because var is not a reserved name
+on Ipython-->var =1
+
+var1 -->Legal because it can contain number
+on Ipython-->var1 =1
+
+1var --> Illigal because it can't start with number
+on Ipython-->1var =1
+SyntaxError: invalid syntax
+
+my-name --> Illegal because only underscore can be used for names
+on Ipython-->my-name =1
+SyntaxError: can't assign to operator
+
+your_name -->Legal
+on Ipython-->your_name = 1
+
+COLOR -->Legal
+on Ipython-->COLOR = 1
+
+
+
+2. Python automatically infers the type from the value you assign to the variable. What is the type of the value stored in each of the variables below.
+a = False 
+type(a)
+Out[31]: bool
+
+b = 3.7
+type(b)
+Out[33]: float
+
+c = ‘Alex‘
+type(c)
+Out[37]: str
+
+d = 7
+type(d)
+Out[39]: int
+
+e = ‘True‘
+type(d)
+Out[39]: int
+
+f = 17j
+type(f)
+Out[43]: complex
+
+g = ‘17‘
+type(g)
+Out[45]: str
+
+h = True
+type(h)
+Out[47]: bool
+
+i = ’3.14159’
+type(i)
+Out[49]: str
+
+
+
+
+3. What is the value (True or False) produced by each expression below, using the
+initial values of the variables a = False, b = True, and c = False. 
+b and c
+Out[53]: False
+
+b or c
+Out[54]: True
+
+not a and b
+Out[55]: True
+
+(a and b) or not c
+Out[56]: True
+
+not b and not (a or c)
+Out[57]: False
+ 
+
